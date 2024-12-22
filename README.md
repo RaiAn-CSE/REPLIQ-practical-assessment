@@ -1,4 +1,5 @@
-# Recipe App
+# Recipe App Live Link: <br/>
+https://repliq-practical-assessment.vercel.app/
 
 # Description:
 
