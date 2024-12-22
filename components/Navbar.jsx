@@ -53,6 +53,14 @@ const Navbar = () => {
               <ul className="tracking-wide font-medium text-sm flex flex-col gap-y-6 lg:gap-y-0 lg:flex-row w-full">
                 <li>
                   <Link
+                    href="/"
+                    className="block md:px-4 transition hover:text-yellow-700"
+                  >
+                    <span>Home</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/all-recipes"
                     className="block md:px-4 transition hover:text-yellow-700"
                   >
