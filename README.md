@@ -1,6 +1,13 @@
 # Recipe App Live Link: <br/>
 https://repliq-practical-assessment.vercel.app/
 
+
+
+Navbar always show on top
+
+Hero section image show in mobile/tab device and also responsive
+
+
 # Description:
 
 - You are provided with an incomplete Recipe App project that uses the free MealDB API to retrieve recipe data. The app needs to showcase some recipes and allows users to add them to a cart. Functionalities after carting is not required for the current MVP. The home page includes a banner section, a top recipes section, and a search option to find recipes by name or ingredients.

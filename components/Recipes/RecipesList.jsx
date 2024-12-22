@@ -38,11 +38,11 @@ const RecipesList = () => {
 
   return (
     <div className="bg-gray-50 py-10">
-      <div className="container mx-auto">
+      <div className="container mx-auto grid items-center">
         <h1 className="text-2xl font-bold text-center">Top Recipes</h1>
         {/* Search form */}
-        <form action="" className="w-full mt-12">
-          <div className="relative flex p-1 rounded-full bg-white   border border-yellow-200 shadow-md md:p-2">
+        <form action="" className="mt-5 lg:mt-7 mx-5 lg:mx-10">
+          <div className="relative flex p-1 rounded-full bg-white border border-yellow-200 shadow-md md:p-2">
             <input
               placeholder="Your favorite food"
               className="w-full p-4 rounded-full outline-none bg-transparent "

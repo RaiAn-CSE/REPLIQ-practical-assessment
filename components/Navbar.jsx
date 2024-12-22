@@ -3,8 +3,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 z-50 w-full bg-[#fefce8] shadow-lg">
-      <div className="container m-auto px-2 md:px-12 lg:px-7">
+    <nav className="sticky grid justify-items-center top-0 z-50 w-full bg-[#fefce8] shadow-lg">
+      <div className="container px-4 md:px-7 lg:px-12">
         <div className="flex flex-wrap items-center justify-between py-3 gap-6 md:py-4 md:gap-0">
           <input
             type="checkbox"
