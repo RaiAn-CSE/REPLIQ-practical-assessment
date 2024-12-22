@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="fixed z-50 w-full bg-white  md:absolute md:bg-transparent">
+    <nav className="sticky top-0 z-50 w-full bg-[#fefce8] shadow-lg">
       <div className="container m-auto px-2 md:px-12 lg:px-7">
         <div className="flex flex-wrap items-center justify-between py-3 gap-6 md:py-4 md:gap-0">
           <input
@@ -18,8 +18,8 @@ const Navbar = () => {
               aria-label="logo"
               className="flex space-x-2 items-center"
             >
-              <span className="text-2xl font-bold text-yellow-900 ">
-                Tailus <span className="text-yellow-700 ">Feedus</span>
+              <span className="text-2xl font-bold text-yellow-900">
+                Tailus <span className="text-yellow-700">Feedus</span>
               </span>
             </Link>
 
@@ -33,11 +33,11 @@ const Navbar = () => {
               >
                 <div
                   id="line"
-                  className="m-auto h-0.5 w-6 rounded bg-yellow-900  transition duration-300"
+                  className="m-auto h-0.5 w-6 rounded bg-yellow-900 transition duration-300"
                 ></div>
                 <div
                   id="line2"
-                  className="m-auto mt-2 h-0.5 w-6 rounded bg-yellow-900  transition duration-300"
+                  className="m-auto mt-2 h-0.5 w-6 rounded bg-yellow-900 transition duration-300"
                 ></div>
               </label>
             </div>
@@ -46,9 +46,9 @@ const Navbar = () => {
           <label
             role="button"
             htmlFor="toggle_nav"
-            className="hidden peer-checked:block fixed w-full h-full left-0 top-0 z-10 bg-yellow-200  bg-opacity-30 backdrop-blur backdrop-filter"
+            className="hidden peer-checked:block fixed w-full h-full left-0 top-0 z-10 bg-yellow-200 bg-opacity-30 backdrop-blur backdrop-filter"
           ></label>
-          <div className="hidden peer-checked:flex w-full flex-col lg:flex lg:flex-row justify-end z-30 items-center gap-y-6 p-6 rounded-xl bg-white  lg:gap-y-0 lg:p-0 md:flex-nowrap lg:bg-transparent lg:w-7/12">
+          <div className="hidden peer-checked:flex w-full flex-col lg:flex lg:flex-row justify-end z-30 items-center gap-y-6 p-6 rounded-xl bg-white lg:gap-y-0 lg:p-0 md:flex-nowrap lg:bg-transparent lg:w-7/12">
             <div className="text-gray-600 lg:pr-4 w-full">
               <ul className="tracking-wide font-medium text-sm flex flex-col gap-y-6 lg:gap-y-0 lg:flex-row w-full">
                 <li>
@@ -78,11 +78,11 @@ const Navbar = () => {
               </ul>
             </div>
 
-            <div className="w-full min-w-max space-y-2 border-yellow-200 lg:space-y-0 sm:w-max lg:border-l ">
+            <div className="w-full min-w-max space-y-2 border-yellow-200 lg:space-y-0 sm:w-max lg:border-l">
               <button
                 type="button"
                 title="Start buying"
-                className="w-full py-3 px-6 text-center rounded-full transition active:bg-yellow-200   focus:bg-yellow-100 sm:w-max"
+                className="w-full py-3 px-6 text-center rounded-full transition active:bg-yellow-200 focus:bg-yellow-100 sm:w-max"
               >
                 <span className="block text-yellow-800 font-semibold text-sm">
                   Sign up
