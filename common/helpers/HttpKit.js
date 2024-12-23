@@ -13,6 +13,16 @@ const HttpKit = {
     }
   },
 
+  getAllRecipes: async () => {
+    try {
+      const response = await axios.get(`${BASE_URL}/filter.php?a=American`);
+      return response.data.meals ? response.data.meals : [];
+    } catch (error) {
+      console.error("Error fetching top recipes:", error);
+      throw error;
+    }
+  },
+
   searchRecipesByName: async (query) => {
     try {
       const response = await axios.get(`${BASE_URL}/search.php`, {

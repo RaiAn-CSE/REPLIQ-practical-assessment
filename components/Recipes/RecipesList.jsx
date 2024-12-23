@@ -28,16 +28,14 @@ const RecipesList = () => {
     setSearchQuery(searchInput);
   };
 
-  // const handleDetailsOpen = (id) => {
-  //   setOpenDetails(true);
-  //   setRecipeId(id);
-  // };
-
   const handleDetailsOpen = (id) => {
     console.log("Opening details for recipe ID:", id);
     setOpenDetails(true);
     setRecipeId(id);
   };
+
+
+  console.log(recipes, "Home recipes");
 
 
   if (isLoading) return <div>Loading recipes...</div>;
