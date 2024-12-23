@@ -1,8 +1,6 @@
 # Recipe App Live Link: <br/>
 https://repliq-practical-assessment.vercel.app/
 
-BASE_URL = "https://www.themealdb.com/api/json/v1/1";
-
 Navbar always show on top
 
 Hero section image show in mobile/tab device and also responsive
@@ -11,6 +9,11 @@ Modal Details show perfectly work now
 
 Modal close button is properly work
 
+All Recipe page added and also show all Recipe in this page in details
+
+
+
+BASE_URL = "https://www.themealdb.com/api/json/v1/1";
 
 # Description:
 
