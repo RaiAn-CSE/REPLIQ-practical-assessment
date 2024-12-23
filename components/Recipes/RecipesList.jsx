@@ -28,10 +28,17 @@ const RecipesList = () => {
     setSearchQuery(searchInput);
   };
 
+  // const handleDetailsOpen = (id) => {
+  //   setOpenDetails(true);
+  //   setRecipeId(id);
+  // };
+
   const handleDetailsOpen = (id) => {
+    console.log("Opening details for recipe ID:", id);
     setOpenDetails(true);
     setRecipeId(id);
   };
+
 
   if (isLoading) return <div>Loading recipes...</div>;
   if (error) return <div>Error loading recipes: {error.message}</div>;
@@ -90,8 +97,8 @@ const RecipesList = () => {
       </div>
 
       {/* Modal*/}
-      <Modal isOpen={openDetails} setIsOpen={setOpenDetails}>
-        <SingleRecipe id={recipeId} setIsOpen={setOpenDetails} />
+      <Modal isOpen={openDetails} recipeId={recipeId} setIsOpen={setOpenDetails}>
+        <SingleRecipe recipeId={recipeId} setIsOpen={setOpenDetails} />
       </Modal>
     </div>
   );

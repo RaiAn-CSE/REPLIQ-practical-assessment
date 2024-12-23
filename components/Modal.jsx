@@ -3,7 +3,10 @@ import React, { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import SingleRecipe from "./Recipes/SingleRecipe";
 
-const Modal = ({ isOpen, setIsOpen, children }) => {
+const Modal = ({ isOpen, setIsOpen, recipeId }) => {  // Pass `recipeId` as a prop
+
+  console.log(recipeId, "recipeId in modal page");
+
   return (
     <Transition.Root show={isOpen} as={Fragment}>
       <Dialog
@@ -24,7 +27,6 @@ const Modal = ({ isOpen, setIsOpen, children }) => {
         </Transition.Child>
 
         <div className="fixed inset-0 z-10 overflow-y-auto">
-          {console.log(children)}
           <div
             onClick={(e) => e.stopPropagation()}
             className="flex items-center justify-center min-h-full p-4 text-center sm:items-center sm:p-0"
@@ -39,7 +41,8 @@ const Modal = ({ isOpen, setIsOpen, children }) => {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel className="w-full px-4 py-4 mx-4 text-left transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
-                <SingleRecipe />
+                {/* Pass `recipeId` to SingleRecipe */}
+                <SingleRecipe recipeId={recipeId} />
               </Dialog.Panel>
             </Transition.Child>
           </div>

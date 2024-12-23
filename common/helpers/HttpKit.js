@@ -39,17 +39,19 @@ const HttpKit = {
 
   getRecipeDetails: async (id) => {
     try {
-      const response = axios
-        .get(`${BASE_URL}/lookup.php`, {
-          params: { i: id },
-        })
-        .then((res) => res);
+      console.log(`Fetching recipe details for ID: ${id}`);
+      const response = await axios.get(`${BASE_URL}/lookup.php`, {
+        params: { i: id },
+      });
+      console.log("API Response:", response.data);
       return response.data.meals ? response.data.meals[0] : null;
     } catch (error) {
       console.error("Error fetching recipe details:", error);
       throw error;
     }
   },
+
+
 
   getCategories: async () => {
     try {
