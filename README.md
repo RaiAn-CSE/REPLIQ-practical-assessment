@@ -2,7 +2,6 @@
 https://repliq-practical-assessment.vercel.app/
 
 
-
 # Project Overview
 
 This project includes various features and functionalities designed to improve user experience and interaction. Below is a summary of the main features:

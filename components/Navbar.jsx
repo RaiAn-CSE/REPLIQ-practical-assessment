@@ -78,26 +78,40 @@ const Navbar = () => {
               </ul>
             </div>
 
-            <div className="w-full min-w-max space-y-2 border-yellow-200 lg:space-y-0 sm:w-max lg:border-l">
+            <div className="w-full min-w-max space-y-4 lg:space-y-0 sm:w-max lg:border-l-2 lg:border-yellow-300">
+              {/* Sign Up Button */}
               <button
                 type="button"
-                title="Start buying"
-                className="w-full py-3 px-6 text-center rounded-full transition active:bg-yellow-200 focus:bg-yellow-100 sm:w-max"
+                title="Sign up"
+                className="w-full py-2 px-3 text-center rounded-full transition-all duration-300 transform bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-200 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 sm:w-max mx-2"
               >
                 <span className="block text-yellow-800 font-semibold text-sm">
-                  Sign up
+                  <Link
+                    href="/signup"
+                    className="block md:px-4 transition-all duration-200 hover:text-yellow-700"
+                  >
+                    Sign Up
+                  </Link>
                 </span>
               </button>
+
+              {/* Login Button */}
               <button
                 type="button"
-                title="Start buying"
-                className="w-full py-3 px-6 text-center rounded-full transition bg-yellow-300 hover:bg-yellow-100 active:bg-yellow-400 focus:bg-yellow-300 sm:w-max"
+                title="Login"
+                className="w-full py-2 px-3 text-center rounded-full transition-all duration-300 transform bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 sm:w-max"
               >
                 <span className="block text-yellow-900 font-semibold text-sm">
-                  Login
+                  <Link
+                    href="/login"
+                    className="block md:px-4 transition-all duration-200 hover:text-yellow-700"
+                  >
+                    Login
+                  </Link>
                 </span>
               </button>
             </div>
+
           </div>
         </div>
       </div>
