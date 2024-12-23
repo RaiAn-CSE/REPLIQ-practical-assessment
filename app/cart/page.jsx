@@ -39,12 +39,10 @@ const Cart = () => {
       <div className="bg-gray-50 min-h-screen flex items-center">
         <div className="container mx-auto text-center">
           <h1 className="text-3xl font-bold mb-4">Your Cart is Empty</h1>
-          <button
+          <Button
             onClick={handleContinueShopping}
-            className="px-4 py-2 text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 transition-colors"
-          >
-            Continue Shopping
-          </button>
+            text="Continue Shopping"
+          />
         </div>
       </div>
     );
@@ -75,12 +73,6 @@ const Cart = () => {
                 >
                   Remove
                 </button>
-                {/* <button
-                  onClick={() => handleDetails(item.idMeal)}
-                  className="mt-2 px-4 py-2 text-black bg-gradient-to-r from-yellow-300 to-[#fefce8] rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105 hover:shadow-lg focus:ring-2 focus:ring-yellow-500 focus:outline-none"
-                >
-                  Details
-                </button> */}
 
                 <Button
                   onClick={() => handleDetails(item.idMeal)}
@@ -91,13 +83,6 @@ const Cart = () => {
           ))}
         </div>
         <div className="my-8 text-center">
-          {/* <button
-            onClick={handleContinueShopping}
-            className="mt-2 px-4 py-2 text-black bg-yellow-300 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105 hover:shadow-lg focus:ring-2 focus:ring-yellow-500 focus:outline-none"
-          >
-            Continue Shopping
-          </button> */}
-
           <Button
             onClick={handleContinueShopping}
             text="Continue Shopping"
