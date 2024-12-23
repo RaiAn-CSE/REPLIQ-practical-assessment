@@ -52,7 +52,6 @@ const HttpKit = {
   },
 
 
-
   getCategories: async () => {
     try {
       const response = await axios.get(`${BASE_URL}/categories.php`);

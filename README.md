@@ -1,7 +1,7 @@
 # Recipe App Live Link: <br/>
 https://repliq-practical-assessment.vercel.app/
 
-
+BASE_URL = "https://www.themealdb.com/api/json/v1/1";
 
 Navbar always show on top
 
