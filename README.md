@@ -2,7 +2,8 @@
 https://repliq-practical-assessment.vercel.app/
 
 # Project Overview
-### ✅ Time average: 4 hour
+
+### ✅ Estimate time: 5 hour
 
 This project includes various features and functionalities designed to improve user experience and interaction. Below is a summary of the main features:
 
@@ -21,7 +22,7 @@ This project includes various features and functionalities designed to improve u
 - The **Modal Close Button** works as expected, allowing the user to easily close the modal and return to the page.
 
 ### ✅ All Recipes Page
-- An **All Recipes Page** has been added, displaying detailed information about each recipe. The user can browse through all available recipes seamlessly.
+- An **All Recipes Page** has been added, displaying detailed information about each recipe. The user can browse through all available recipes seamlessly. user can access all details by clicking "See more" button in "App recipe" page card.
 
 ### ✅ Cart Page
 - A **Cart Page** has been added where users can add and remove items. Data is stored in **Local Storage**
@@ -33,7 +34,7 @@ This project includes various features and functionalities designed to improve u
 - Local storage use just for functionalities
 
 ### ✅ Bug Fix
-- Modal data show, modal close button 
+- Modal data show, modal close button, home page image show in mobile device
   
 ## Conclusion
 This project provides a user-friendly interface with efficient navigation, detailed recipe viewing, and seamless cart functionality. The responsive design ensures it works well on all devices, enhancing the overall user experience.

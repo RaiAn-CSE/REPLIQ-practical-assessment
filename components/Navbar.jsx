@@ -25,6 +25,8 @@ const Navbar = () => {
     return <div>Loading...</div>;
   }
 
+  console.log(isLoggedIn, 'isLoggedIn');
+
   return (
     <nav className="sticky grid justify-items-center top-0 z-50 w-full bg-[#fefce8] shadow-lg">
       <div className="container px-4 md:px-7 lg:px-12">

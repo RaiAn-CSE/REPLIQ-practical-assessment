@@ -26,6 +26,7 @@ const Login = () => {
             localStorage.setItem("isLoggedIn", "true");
             localStorage.setItem("currentUser", JSON.stringify(validUser));
             alert("Login successful!");
+            window.location.reload(); // Reload the page after login
             router.push("/"); // Redirect to home page
         } else {
             alert("Invalid email or password.");
