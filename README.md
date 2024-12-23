@@ -1,8 +1,8 @@
 # Recipe App Live Link: <br/>
 https://repliq-practical-assessment.vercel.app/
 
-
 # Project Overview
+### ✅ Time average: 4 hour
 
 This project includes various features and functionalities designed to improve user experience and interaction. Below is a summary of the main features:
 
@@ -24,10 +24,16 @@ This project includes various features and functionalities designed to improve u
 - An **All Recipes Page** has been added, displaying detailed information about each recipe. The user can browse through all available recipes seamlessly.
 
 ### ✅ Cart Page
-- A **Cart Page** has been added where users can add and remove items. Data is stored in **Local Storage**, so the user's cart persists across sessions.
+- A **Cart Page** has been added where users can add and remove items. Data is stored in **Local Storage**
 
 ### ✅ Search Functionality
-- The **Search Option** allows users to filter recipes by name or ingredients. This feature makes it easier for users to find specific recipes from the list.
+- The **Search Option** allows users to filter recipes by name or ingredients.
+
+### ✅ Login and sign up 
+- Local storage use just for functionalities
+
+### ✅ Bug Fix
+- Modal data show, modal close button 
   
 ## Conclusion
 This project provides a user-friendly interface with efficient navigation, detailed recipe viewing, and seamless cart functionality. The responsive design ensures it works well on all devices, enhancing the overall user experience.
