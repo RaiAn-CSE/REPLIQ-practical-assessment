@@ -7,6 +7,10 @@ Navbar always show on top
 
 Hero section image show in mobile/tab device and also responsive
 
+Modal Details show perfectly work now
+
+Modal close button is properly work
+
 
 # Description:
 

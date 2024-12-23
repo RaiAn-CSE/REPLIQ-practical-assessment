@@ -8,7 +8,7 @@ const SingleRecipe = ({ recipeId, setIsOpen }) => {
   console.log(recipeId, "send to getRecipeDetails");
 
   const { data, isLoading, error } = useQuery({
-    queryKey: ["recipe-details"],
+    queryKey: ["recipe-details", recipeId],
     queryFn: () => HttpKit.getRecipeDetails(recipeId),
   });
 

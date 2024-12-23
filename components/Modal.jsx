@@ -42,7 +42,7 @@ const Modal = ({ isOpen, setIsOpen, recipeId }) => {  // Pass `recipeId` as a pr
             >
               <Dialog.Panel className="w-full px-4 py-4 mx-4 text-left transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
                 {/* Pass `recipeId` to SingleRecipe */}
-                <SingleRecipe recipeId={recipeId} />
+                <SingleRecipe recipeId={recipeId} setIsOpen={setIsOpen} />
               </Dialog.Panel>
             </Transition.Child>
           </div>
