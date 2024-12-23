@@ -24,7 +24,6 @@ const Modal = ({ isOpen, onClose, fullDescription }) => {
   );
 };
 
-
 // AllRecipes component
 const AllRecipes = () => {
   const [recipes, setRecipes] = useState([]);
@@ -72,11 +71,11 @@ const AllRecipes = () => {
                 <div className="p-4">
                   <h2 className="text-xl font-semibold">{recipe.strCategory}</h2>
                   <p className="text-gray-700 mt-2">
-                    {recipe.strCategoryDescription.length > 100
+                    {recipe.strCategoryDescription && recipe.strCategoryDescription.length > 100
                       ? `${recipe.strCategoryDescription.slice(0, 100)}...`
-                      : recipe.strCategoryDescription}
+                      : recipe.strCategoryDescription || "No description available"}
                   </p>
-                  {recipe.strCategoryDescription.length > 100 && (
+                  {recipe.strCategoryDescription && recipe.strCategoryDescription.length > 100 && (
                     <button
                       onClick={() => handleSeeMore(recipe.strCategoryDescription)}
                       className="text-blue-500 mt-2"
