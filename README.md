@@ -1,6 +1,40 @@
 # Recipe App Live Link: <br/>
 https://repliq-practical-assessment.vercel.app/
 
+
+
+# Project Overview
+
+This project includes various features and functionalities designed to improve user experience and interaction. Below is a summary of the main features:
+
+## Features
+
+### ✅ Navbar
+- The **Navbar** is fixed at the top of the page, ensuring it is always visible, no matter how much the user scrolls.
+
+### ✅ Hero Section
+- The **Hero Section** image is fully responsive and adapts to mobile, tablet, and desktop devices. It enhances the user experience by adjusting based on the screen size.
+
+### ✅ Modal Details
+- **Modal Details** are displayed perfectly with smooth transitions. The modal is dynamic and shows additional information when a recipe is selected.
+
+### ✅ Modal Close Button
+- The **Modal Close Button** works as expected, allowing the user to easily close the modal and return to the page.
+
+### ✅ All Recipes Page
+- An **All Recipes Page** has been added, displaying detailed information about each recipe. The user can browse through all available recipes seamlessly.
+
+### ✅ Cart Page
+- A **Cart Page** has been added where users can add and remove items. Data is stored in **Local Storage**, so the user's cart persists across sessions.
+
+### ✅ Search Functionality
+- The **Search Option** allows users to filter recipes by name or ingredients. This feature makes it easier for users to find specific recipes from the list.
+  
+## Conclusion
+This project provides a user-friendly interface with efficient navigation, detailed recipe viewing, and seamless cart functionality. The responsive design ensures it works well on all devices, enhancing the overall user experience.
+
+---
+
 Navbar always show on top
 
 Hero section image show in mobile/tab device and also responsive
@@ -10,6 +44,10 @@ Modal Details show perfectly work now
 Modal close button is properly work
 
 All Recipe page added and also show all Recipe in this page in details
+
+cart page added and also store in Local storage--> Add/remove
+
+Search option added in project
 
 
 
