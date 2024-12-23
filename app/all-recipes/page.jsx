@@ -58,7 +58,7 @@ const AllRecipes = () => {
             recipes.map((recipe) => (
               <div
                 key={recipe.idCategory}
-                className="max-w-sm rounded overflow-hidden shadow-lg bg-white"
+                className="max-w-sm overflow-hidden nm_Container rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-105"
               >
                 <Image
                   className="w-full h-40 object-cover"
