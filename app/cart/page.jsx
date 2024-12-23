@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Modal from "@/components/Modal"; // Assuming Modal is in the components folder
+import Modal from "@/components/Modal";
 import Button from "../shared/Button";
 
 const Cart = () => {

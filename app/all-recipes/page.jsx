@@ -91,14 +91,14 @@ const AllRecipes = () => {
 
                 <button
                   onClick={() => handleAddToCart(recipe)}
-                  className="mt-2 px-4 py-0 text-black bg-yellow-300 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105 hover:shadow-lg focus:ring-2 focus:ring-yellow-500 focus:outline-none flex items-center"
+                  className="mt-2 px-4 py-1 text-black bg-yellow-300 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105 hover:shadow-lg focus:ring-2 focus:ring-yellow-500 focus:outline-none flex items-center"
                 >
                   <Image
                     className="border-2 border-white rounded-full p-1 mr-2 bg-white hover:p-0 transition-all duration-300"
                     src={cartIcon}
                     alt="Add to Cart"
-                    width={35}
-                    height={35}
+                    width={30}
+                    height={30}
                   />
                   <span className="font-semibold">Add to Cart</span>
                 </button>
