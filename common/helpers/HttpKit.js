@@ -52,15 +52,34 @@ const HttpKit = {
   },
 
 
+  // getCategories: async () => {
+  //   try {
+  //     const response = await axios.get(`${BASE_URL}/categories.php`);
+  //     return response.data.categories || [];
+  //   } catch (error) {
+  //     console.error("Error fetching categories:", error);
+  //     throw error;
+  //   }
+  // },
+
+
   getCategories: async () => {
     try {
       const response = await axios.get(`${BASE_URL}/categories.php`);
-      return response.data.categories || [];
+
+      // Check if 'categories' exists in the response and is an array
+      if (response.data && Array.isArray(response.data.categories)) {
+        return response.data.categories;
+      } else {
+        console.warn("Categories data not available in response", response.data);
+        return []; // return empty array if categories not found
+      }
     } catch (error) {
       console.error("Error fetching categories:", error);
-      throw error;
+      return []; // Return an empty array if the API call fails
     }
   },
+
 
   filterByCategory: async (category) => {
     try {
